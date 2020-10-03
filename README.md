@@ -33,7 +33,7 @@ yarn ios
 yarn web
 ```
 
-This should start up your browser on [`http://localhost:19002/`](http://localhost:19002/). From there you can scan the QR code.
+This should start up your browser on [`http://localhost:19002/`](http://localhost:19002/). From there you can scan the QR code. 🤳
 
 ## Exercices
 
