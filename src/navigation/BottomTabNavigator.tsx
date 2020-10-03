@@ -5,11 +5,11 @@ import * as React from 'react';
 
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
-import TabOneScreen from '../screens/TabOneScreen';
+import TimelineScreen from '../screens/TimelineScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 import {
   BottomTabParamList,
-  TabOneParamList,
+  TimelineParamList,
   ProfileParamList,
 } from '../types';
 
@@ -20,12 +20,12 @@ export default function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="TabOne"
+      initialRouteName="Timeline"
       tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}
     >
       <BottomTab.Screen
-        name="TabOne"
-        component={TabOneNavigator}
+        name="Timeline"
+        component={TimelineNavigator}
         options={{
           tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
         }}
@@ -49,17 +49,17 @@ function TabBarIcon(props: { name: string; color: string }) {
 
 // Each tab has its own navigation stack, you can read more about this pattern here:
 // https://reactnavigation.org/docs/tab-based-navigation#a-stack-navigator-for-each-tab
-const TabOneStack = createStackNavigator<TabOneParamList>();
+const TimelineStack = createStackNavigator<TimelineParamList>();
 
-function TabOneNavigator() {
+function TimelineNavigator() {
   return (
-    <TabOneStack.Navigator>
-      <TabOneStack.Screen
-        name="TabOneScreen"
-        component={TabOneScreen}
-        options={{ headerTitle: 'Tab One Title' }}
+    <TimelineStack.Navigator>
+      <TimelineStack.Screen
+        name="TimelineScreen"
+        component={TimelineScreen}
+        options={{ headerTitle: 'Timeline' }}
       />
-    </TabOneStack.Navigator>
+    </TimelineStack.Navigator>
   );
 }
 

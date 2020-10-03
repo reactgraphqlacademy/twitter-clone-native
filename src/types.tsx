@@ -4,12 +4,12 @@ export type RootStackParamList = {
 };
 
 export type BottomTabParamList = {
-  TabOne: undefined;
+  Timeline: undefined;
   Profile: undefined;
 };
 
-export type TabOneParamList = {
-  TabOneScreen: undefined;
+export type TimelineParamList = {
+  TimelineScreen: undefined;
 };
 
 export type ProfileParamList = {

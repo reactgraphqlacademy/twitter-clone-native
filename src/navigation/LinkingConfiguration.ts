@@ -6,9 +6,9 @@ export default {
     screens: {
       Root: {
         screens: {
-          TabOne: {
+          Timeline: {
             screens: {
-              TabOneScreen: 'one',
+              TimelineScreen: 'timeline',
             },
           },
           Profile: {
