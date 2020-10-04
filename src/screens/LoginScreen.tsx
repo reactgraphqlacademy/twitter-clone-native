@@ -7,6 +7,11 @@ import Colors from '../constants/Colors';
 // import { TOC_SCREEN } from './PublicNavigator'
 // import { PRIVATE_SCREEN } from './RootNavigator'
 
+interface formProps {
+  key: string;
+  value: string;
+}
+
 export default class LoginScreen extends React.Component {
   state = {
     email: '',
@@ -18,7 +23,8 @@ export default class LoginScreen extends React.Component {
     alert('LOGIN');
   };
 
-  handleFormChange = ({ key, value }) => this.setState({ [key]: value });
+  handleFormChange = ({ key, value }: formProps) =>
+    this.setState({ [key]: value });
 
   render() {
     return (

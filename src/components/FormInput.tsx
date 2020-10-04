@@ -5,7 +5,8 @@ import { TextInput } from 'react-native-paper';
 interface FormInputProp {
   label: string;
   value: string;
-  onChangeText: () => void;
+  onChangeText: (value: any) => void;
+  secureTextEntry?: boolean;
 }
 
 export const FormInput = ({
