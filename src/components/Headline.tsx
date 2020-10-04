@@ -1,11 +1,11 @@
 import React from 'react';
-import { Text } from 'react-native-paper';
+import { Headline as HeadlinePaper } from 'react-native-paper';
 
 export const Headline = ({ parentColor = 'primary', children, ...rest }) => {
   const primary = parentColor === 'primary';
   return (
-    <Text h2 style={{ color: primary ? 'white' : 'black' }} {...rest}>
+    <HeadlinePaper style={{ color: primary ? 'white' : 'black' }} {...rest}>
       {children}
-    </Text>
+    </HeadlinePaper>
   );
 };
