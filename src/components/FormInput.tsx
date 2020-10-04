@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { Input } from 'react-native-paper';
+import { TextInput } from 'react-native-paper';
 
 interface FormInputProp {
   label: string;
@@ -15,6 +15,11 @@ export const FormInput = ({
   ...rest
 }: FormInputProp) => (
   <View style={{ paddingVertical: 8 }}>
-    <Input {...rest} label={label} value={value} onChangeText={onChangeText} />
+    <TextInput
+      {...rest}
+      label={label}
+      value={value}
+      onChangeText={onChangeText}
+    />
   </View>
 );

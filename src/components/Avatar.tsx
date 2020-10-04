@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, StyleSheet } from 'react-native';
-import { PROFILE_AVATAR_SIZE } from '../config/utils';
+import { PROFILE_AVATAR_SIZE } from '../constants/Utils';
 
 interface AvatarProps {
   uri: string;

@@ -6,6 +6,11 @@ export default {
     screens: {
       Root: {
         screens: {
+          Login: {
+            screens: {
+              LoginScreen: 'login',
+            },
+          },
           Timeline: {
             screens: {
               TimelineScreen: 'timeline',

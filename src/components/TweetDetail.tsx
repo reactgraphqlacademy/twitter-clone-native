@@ -2,7 +2,8 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { Paper, Screen, Avatar } from './index';
 import { Feather } from '@expo/vector-icons';
-import { Icons, Colors } from '../config/utils';
+import { Icons } from '../constants/Utils';
+import Colors from '../constants/Colors';
 import { ExternalLink } from './ExternalLink';
 
 const IconButton = ({ icon }) => (
