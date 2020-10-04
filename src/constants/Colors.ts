@@ -30,6 +30,5 @@ export const theme = {
   colors: {
     ...DefaultTheme.colors,
     primary: tintColorLight,
-    accent: '#f1c40f',
   },
 };

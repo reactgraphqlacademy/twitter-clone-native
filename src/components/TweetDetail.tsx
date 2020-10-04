@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { Paper, Screen, Avatar } from './index';
+import { Paper } from './Paper';
+import { Screen } from './Screen';
+import { Avatar } from './Avatar';
 import { Feather } from '@expo/vector-icons';
 import { Icons } from '../constants/Utils';
 import Colors from '../constants/Colors';
