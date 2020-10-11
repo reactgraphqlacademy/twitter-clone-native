@@ -1,8 +1,7 @@
-import * as React from 'react';
-import { Text, View } from '../components/Themed';
+import React from 'react';
 
 import * as api from '../api/';
-import { FlatList, StyleSheet, ScrollView } from 'react-native';
+import { FlatList, StyleSheet } from 'react-native';
 import { Screen, TweetItem, ViewLoading } from '../components';
 // import { TWEET_DETAIL_SCREEN } from './TimelineNavigator';
 
@@ -43,6 +42,10 @@ export default class TimelineScreen extends React.Component {
     /*
     - navigate to `TWEET_DETAIL_SCREEN` passing the id as a param
     */
+    this.props.navigation.navigate({
+      routeName: TWEET_DETAIL_SCREEN,
+      params: { id },
+    });
   };
   /*
     - create a TweetItem component with this API:

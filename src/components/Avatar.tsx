@@ -3,7 +3,7 @@ import { Image, StyleSheet } from 'react-native';
 import { PROFILE_AVATAR_SIZE } from '../constants/Utils';
 
 interface AvatarProps {
-  uri: string;
+  image: string;
 }
 
 export const Avatar = ({ style, image, profile, ...rest }: AvatarProps) => {

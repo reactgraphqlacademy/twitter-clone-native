@@ -5,7 +5,7 @@ import { Avatar } from './Avatar';
 
 export const TweetItem = ({ item, handlePress, withAvatar = true }) => (
   <TouchableOpacity onPress={handlePress}>
-    <View style={styles.item}>
+    <View>
       <View style={styles.container}>
         {withAvatar ? (
           <Avatar image={item.user.profile_image_url_https} />

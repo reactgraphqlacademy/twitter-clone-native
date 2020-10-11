@@ -9,7 +9,7 @@ import Colors from '../constants/Colors';
 import { ExternalLink } from './ExternalLink';
 
 const IconButton = ({ icon }) => (
-  <Feather name={Icons[icon]} size={24} color={Colors.lightgrey} />
+  <Feather name={Icons[icon]} size={24} color={Colors.light.tabIconDefault} />
 );
 
 const TweetURL = ({ urls }) =>
