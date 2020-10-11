@@ -6,7 +6,7 @@ import {
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
 import { ColorSchemeName } from 'react-native';
-import LoginScreen from '../screens/LoginScreen';
+import LoginScreen from '../final/01/LoginScreen';
 
 import NotFoundScreen from '../screens/NotFoundScreen';
 import { RootStackParamList } from '../types';

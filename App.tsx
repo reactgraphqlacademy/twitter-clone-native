@@ -1,7 +1,9 @@
-import RootScreen from './src/screens/RootScreen';
-import TOSScreen from './src/screens/TOSScreen';
-import TimelineScreen from './src/screens/TimelineScreen';
+// 🥑  Modify the export according to the exercices
 
-export default TimelineScreen;
-// export default TOSScreen;
-// export default RootScreen;
+// import { LoginScreen as App } from './src/exercice/01';
+// import { TermsScreen as App } from './src/exercice/01';
+import { TimelineScreen as App } from './src/exercice/01';
+
+import RootScreen from './src/screens/RootScreen';
+
+export default App;

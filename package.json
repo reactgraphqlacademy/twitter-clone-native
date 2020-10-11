@@ -1,4 +1,5 @@
 {
+  "name": "twitter-clone-native",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
@@ -36,7 +37,7 @@
     "@babel/core": "~7.9.0",
     "@types/react": "~16.9.35",
     "@types/react-native": "~0.63.2",
+    "eslint-config-react-native-wcandillon": "^3.3.3",
     "typescript": "~3.9.5"
-  },
-  "private": true
+  }
 }

@@ -1,27 +1,14 @@
 import React from 'react';
 
-import * as api from '../api/';
-import { FlatList, StyleSheet } from 'react-native';
-import { Screen, TweetItem, ViewLoading } from '../components';
-// import { TWEET_DETAIL_SCREEN } from './TimelineNavigator';
-
-// export default function TimelineScreen() {
-//   return (
-//     <View style={styles.container}>
-//       <Text style={styles.title}>Timeline</Text>
-//       <View
-//         style={styles.separator}
-//         lightColor="#eee"
-//         darkColor="rgba(255,255,255,0.1)"
-//       />
-//     </View>
-//   );
-// }
+import * as api from '../../api/';
+import { StyleSheet, Text } from 'react-native';
+import { Screen, TweetItem, ViewLoading } from '../../components';
+import { FlatList, ScrollView } from 'react-native-gesture-handler';
 
 export default class TimelineScreen extends React.Component {
-  /*
-  - the header title for this view should be `Timeline`
-  */
+  static navigationOptions = {
+    title: 'Timeline',
+  };
 
   state = {
     timeline: [],
@@ -39,18 +26,12 @@ export default class TimelineScreen extends React.Component {
 
   handleTweetPress = (id) => {
     console.log('handlePress => ', id);
-    /*
-    - navigate to `TWEET_DETAIL_SCREEN` passing the id as a param
-    */
     this.props.navigation.navigate({
       routeName: TWEET_DETAIL_SCREEN,
       params: { id },
     });
   };
-  /*
-    - create a TweetItem component with this API:
-      <TweetItem item={item} handlePress={() => this.handleTweetPress(item.id_str)} />
-    */
+
   renderItem = ({ item }) => (
     <TweetItem
       item={item}

@@ -2,10 +2,8 @@ import React from 'react';
 import { StyleSheet, TouchableOpacity, Text, View } from 'react-native';
 import Constants from 'expo-constants';
 import { Button } from 'react-native-paper';
-import { Title, Screen, Headline, FormInput } from '../components';
-import Colors from '../constants/Colors';
-// import { TOC_SCREEN } from './PublicNavigator'
-// import { PRIVATE_SCREEN } from './RootNavigator'
+import { Screen, Headline, FormInput } from '../../components';
+import Colors from '../../constants/Colors';
 
 interface formProps {
   key: string;
@@ -19,7 +17,6 @@ export default class LoginScreen extends React.Component {
   };
 
   login = () => {
-    // this.props.navigation.navigate(PRIVATE_SCREEN)
     alert('LOGIN');
   };
 

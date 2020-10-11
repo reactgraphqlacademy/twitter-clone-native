@@ -1,7 +1,7 @@
 import { createStackNavigator } from '@react-navigation/stack';
 
-import LoginScreen from '../screens/LoginScreen';
-import TOSScreen from '../screens/TOSScreen';
+import LoginScreen from '../final/01/LoginScreen';
+import TOSScreen from '../screens/TermsScreen';
 
 /*
   1. create a Stack Navigator that shows the LoginScreen
