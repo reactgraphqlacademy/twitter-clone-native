@@ -1,66 +1,54 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, TouchableOpacity, Text, View } from 'react-native';
 import Constants from 'expo-constants';
 import { Button } from 'react-native-paper';
 import { Screen, Headline, FormInput } from '../../components';
 import Colors from '../../constants/Colors';
 
-interface formProps {
-  key: string;
-  value: string;
-}
+export default function LoginScreen() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-export default class LoginScreen extends React.Component {
-  state = {
-    email: '',
-    password: '',
-  };
-
-  login = () => {
+  function handleLogin() {
     alert('LOGIN');
-  };
-
-  handleFormChange = ({ key, value }: formProps) =>
-    this.setState({ [key]: value });
-
-  render() {
-    return (
-      <Screen>
-        <View style={styles.header}>
-          <Headline>Twitter Clone</Headline>
-        </View>
-        <View style={styles.content}>
-          <FormInput
-            label="Email"
-            value={this.state.email}
-            onChangeText={(value) =>
-              this.handleFormChange({ key: 'email', value })
-            }
-          />
-          <FormInput
-            label="Password"
-            value={this.state.password}
-            secureTextEntry
-            onChangeText={(value) =>
-              this.handleFormChange({ key: 'password', value })
-            }
-          />
-          <Button
-            onPress={this.login}
-            style={styles.submitButton}
-            mode="contained"
-          >
-            Login
-          </Button>
-          <TouchableOpacity onPress={() => alert('TOC!')}>
-            <Text style={styles.tocText}>
-              by login you accept the Terms and Conditions.
-            </Text>
-          </TouchableOpacity>
-        </View>
-      </Screen>
-    );
   }
+
+  function handleTerms() {
+    alert('TOC!');
+  }
+
+  return (
+    <Screen>
+      <View style={styles.header}>
+        <Headline>Twitter Clone</Headline>
+      </View>
+      <View style={styles.content}>
+        <FormInput
+          label="Email"
+          value={email}
+          onChangeText={(value) => setEmail(value)}
+        />
+        <FormInput
+          label="Password"
+          value={password}
+          secureTextEntry
+          onChangeText={(value) => setPassword(value)}
+        />
+        <Button
+          onPress={handleLogin}
+          style={styles.submitButton}
+          mode="contained"
+        >
+          Login
+        </Button>
+        <TouchableOpacity onPress={handleTerms}>
+          <Text style={styles.tocText}>
+            by login you accept the Terms and Conditions.
+          </Text>
+        </TouchableOpacity>
+      </View>
+    </Screen>
+  );
 }
 
 const styles = StyleSheet.create({
