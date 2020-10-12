@@ -5,8 +5,8 @@ import { Appbar } from 'react-native-paper';
 import { Screen } from '../../components';
 import { theme } from '../../constants/Colors';
 
-export default function TermsScreen() {
-  const goBack = () => alert('Went back');
+export default function TermsScreen({ navigation }) {
+  const goBack = () => navigation.goBack();
   const handleMore = () => alert('Shown more');
 
   return (
