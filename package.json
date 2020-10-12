@@ -1,5 +1,7 @@
 {
+  "name": "twitter-clone-native",
   "main": "node_modules/expo/AppEntry.js",
+  "private": true,
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -12,7 +14,7 @@
     "@react-native-community/masked-view": "0.1.10",
     "@react-navigation/bottom-tabs": "^5.8.0",
     "@react-navigation/native": "^5.7.3",
-    "@react-navigation/stack": "^5.9.0",
+    "@react-navigation/stack": "^5.9.3",
     "add": "^2.0.6",
     "expo": "~39.0.2",
     "expo-asset": "~8.2.0",
@@ -36,7 +38,7 @@
     "@babel/core": "~7.9.0",
     "@types/react": "~16.9.35",
     "@types/react-native": "~0.63.2",
+    "eslint-config-react-native-wcandillon": "^3.3.3",
     "typescript": "~3.9.5"
-  },
-  "private": true
+  }
 }

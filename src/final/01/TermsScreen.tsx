@@ -1,11 +1,12 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
-import { Screen } from '../components';
+import { Text, Image } from 'react-native';
+import { ScrollView } from 'react-native-gesture-handler';
 import { Appbar } from 'react-native-paper';
-import { theme } from '../constants/Colors';
+import { Screen } from '../../components';
+import { theme } from '../../constants/Colors';
 
-export default function TOCScreen() {
-  const goBack = () => alert('Went back');
+export default function TermsScreen({ navigation }) {
+  const goBack = () => navigation.goBack();
   const handleMore = () => alert('Shown more');
 
   return (
@@ -15,7 +16,7 @@ export default function TOCScreen() {
         <Appbar.Content title="Terms and Conditions" />
         <Appbar.Action icon="dots-vertical" onPress={handleMore} />
       </Appbar.Header>
-      <View style={{ padding: 32 }}>
+      <ScrollView style={{ padding: 32 }}>
         <Text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
           sodales at metus ac fermentum. Nulla eu nibh lorem. Mauris
@@ -342,7 +343,7 @@ export default function TOCScreen() {
         />
 
         <Text style={{ marginBottom: 128 }}>Good Job!</Text>
-      </View>
+      </ScrollView>
     </Screen>
   );
 }
