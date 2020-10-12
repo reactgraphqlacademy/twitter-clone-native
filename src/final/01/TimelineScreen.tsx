@@ -1,63 +1,56 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import * as api from '../../api/';
 import { StyleSheet, Text } from 'react-native';
 import { Screen, TweetItem, ViewLoading } from '../../components';
 import { FlatList, ScrollView } from 'react-native-gesture-handler';
 
-export default class TimelineScreen extends React.Component {
-  static navigationOptions = {
-    title: 'Timeline',
-  };
+import { TweetItemProps, TimelineScreenProps } from './types';
+import { TWEET_DETAIL_SCREEN } from '../02/PublicNavigator';
 
-  state = {
-    timeline: [],
-  };
+export default function TimelineScreen(props: TimelineScreenProps) {
+  const [timeline, setTimeline] = useState([]);
 
-  componentDidMount() {
-    this.fetchTimeline();
+  useEffect(() => {
+    fetchTimeline();
+  }, []);
+
+  function fetchTimeline() {
+    props.api.fetchTimeline().then((timeline: []) => {
+      setTimeline(timeline);
+    });
   }
 
-  fetchTimeline = () => {
-    this.props.api.fetchTimeline().then((timeline) => {
-      this.setState({ timeline });
-    });
-  };
-
-  handleTweetPress = (id) => {
+  function handleTweetPress(id: string) {
     console.log('handlePress => ', id);
-    this.props.navigation.navigate({
-      routeName: TWEET_DETAIL_SCREEN,
-      params: { id },
-    });
-  };
+    props.navigation.navigate(TWEET_DETAIL_SCREEN, { id });
+  }
 
-  renderItem = ({ item }) => (
-    <TweetItem
-      item={item}
-      handlePress={() => this.handleTweetPress(item.id_str)}
-    />
-  );
-
-  render() {
-    const { timeline } = this.state;
+  function Item({ item }: { item: TweetItemProps }) {
     return (
-      <Screen style={styles.screen}>
-        {timeline.length == 0 ? (
-          <ViewLoading />
-        ) : (
-          <FlatList
-            data={this.state.timeline}
-            renderItem={this.renderItem}
-            keyExtractor={(item) => item.id_str}
-          />
-          // <ScrollView>
-          //   <Text>{JSON.stringify(timeline, null, 4)}</Text>
-          // </ScrollView>
-        )}
-      </Screen>
+      <TweetItem
+        item={item}
+        handlePress={() => handleTweetPress(item.id_str)}
+      />
     );
   }
+
+  return (
+    <Screen style={styles.screen}>
+      {timeline.length == 0 ? (
+        <ViewLoading />
+      ) : (
+        <FlatList
+          data={timeline}
+          renderItem={({ item }) => <Item item={item} />}
+          keyExtractor={(item) => item.id_str}
+        />
+        // <ScrollView>
+        //   <Text>{JSON.stringify(timeline, null, 4)}</Text>
+        // </ScrollView>
+      )}
+    </Screen>
+  );
 }
 
 const styles = StyleSheet.create({

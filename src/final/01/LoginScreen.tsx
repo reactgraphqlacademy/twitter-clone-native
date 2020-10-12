@@ -11,7 +11,7 @@ export default function LoginScreen({ navigation: { navigate } }) {
   const [password, setPassword] = useState('');
 
   function handleLogin() {
-    alert('LOGIN');
+    navigate(TERMS_SCREEN);
   }
 
   function handleTerms() {
