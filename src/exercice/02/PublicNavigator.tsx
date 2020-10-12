@@ -1,15 +1,7 @@
 import React from 'react';
+import { LoginScreen, TermsScreen } from '../01';
 
-import { createStackNavigator } from '@react-navigation/stack';
-import { LoginScreen, TermsScreen } from '../../final/01';
+export const LOGIN_SCREEN = 'Login';
+export const TERMS_SCREEN = 'Terms';
 
-const Stack = createStackNavigator();
-
-export default function PublicStack() {
-  return (
-    <Stack.Navigator>
-      <Stack.Screen name="Login" component={LoginScreen} />
-      <Stack.Screen name="Terms" component={TermsScreen} />
-    </Stack.Navigator>
-  );
-}
+// 🥑  Create a PublicStack

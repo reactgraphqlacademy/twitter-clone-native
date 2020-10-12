@@ -4,8 +4,9 @@ import Constants from 'expo-constants';
 import { Button } from 'react-native-paper';
 import { Screen, Headline, FormInput } from '../../components';
 import Colors from '../../constants/Colors';
+import { TERMS_SCREEN } from '../../exercice/02/PublicNavigator';
 
-export default function LoginScreen() {
+export default function LoginScreen({ navigation: { navigate } }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -14,7 +15,7 @@ export default function LoginScreen() {
   }
 
   function handleTerms() {
-    alert('TOC!');
+    navigate(TERMS_SCREEN);
   }
 
   return (
