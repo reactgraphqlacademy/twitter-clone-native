@@ -40,6 +40,7 @@ This should start up your browser on [`http://localhost:19002/`](http://localhos
 - [React Native Foundations](./exercice/01.md)
 - [React Native Navigation](./exercice/02.md)
 - [React Native Animations](./exercice/03.md)
+- [React Native Ecosystem](./exercice/04.md)
 
 ## Workshop Feedback
 
