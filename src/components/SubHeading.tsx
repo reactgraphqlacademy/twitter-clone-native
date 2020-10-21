@@ -13,7 +13,6 @@ export const SubHeading = ({ children, ...rest }: SubHeadingProps) => (
         opacity: 0.6,
       },
     ]}
-    h4
     {...rest}
   >
     {children.toUpperCase()}
