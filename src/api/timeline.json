@@ -2909,7 +2909,7 @@
       "created_at": "Thu Mar 14 22:27:11 +0000 2019",
       "id": 1106320898573955100,
       "id_str": "1106320898573955074",
-      "text": "RT @ReactAmsterdam: Our partners @reactjsacademy are running a React/Redux Part-time course in Amsterdam starting on March 15! We have prep…",
+      "text": "RT @ReactAmsterdam: Our partners @reactgqlacademy are running a React/Redux Part-time course in Amsterdam starting on March 15! We have prep…",
       "truncated": false,
       "entities": {
         "hashtags": [],
@@ -2923,8 +2923,8 @@
             "indices": [3, 18]
           },
           {
-            "screen_name": "reactjsacademy",
-            "name": "ReactJS Academy",
+            "screen_name": "reactgqlacademy",
+            "name": "React GQL Academy",
             "id": 770259608669683700,
             "id_str": "770259608669683712",
             "indices": [33, 48]
@@ -2942,8 +2942,8 @@
       "user": {
         "id": 770259608669683700,
         "id_str": "770259608669683712",
-        "name": "ReactJS Academy",
-        "screen_name": "reactjsacademy",
+        "name": "React GQL Academy",
+        "screen_name": "reactgqlacademy",
         "location": "London, England",
         "description": "Take your dev career further by mastering the React ecosystem. ⛺️ Bootcamps | 🕡 Part-time. | 📲 React Native",
         "url": "https://t.co/5C3OIuRWj2",
@@ -3003,15 +3003,15 @@
         "created_at": "Thu Mar 14 17:02:02 +0000 2019",
         "id": 1106239072954130400,
         "id_str": "1106239072954130434",
-        "text": "Our partners @reactjsacademy are running a React/Redux Part-time course in Amsterdam starting on March 15! We have… https://t.co/TyxUHSynKJ",
+        "text": "Our partners @reactgqlacademy are running a React/Redux Part-time course in Amsterdam starting on March 15! We have… https://t.co/TyxUHSynKJ",
         "truncated": true,
         "entities": {
           "hashtags": [],
           "symbols": [],
           "user_mentions": [
             {
-              "screen_name": "reactjsacademy",
-              "name": "ReactJS Academy",
+              "screen_name": "reactgqlacademy",
+              "name": "React GQL Academy",
               "id": 770259608669683700,
               "id_str": "770259608669683712",
               "indices": [13, 28]
