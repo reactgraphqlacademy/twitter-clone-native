@@ -2,7 +2,9 @@ import React from 'react';
 import { ScrollView, Text } from 'react-native';
 import { TweetDetail, Screen, ViewLoading } from '../../components';
 import * as api from '../../api';
-import { AppRoute } from '../02/AppRoutes';
+
+// 🥑 Import the routing
+// import { AppRoute } from '../02/AppRoutes';
 
 class TweetDetailScreen extends React.Component {
   state = {
@@ -28,13 +30,8 @@ class TweetDetailScreen extends React.Component {
   };
 
   handleProfilePress = () => {
-    this.props.navigation.navigate({
-      name: AppRoute.OTHER_USER_PROFILE,
-      key: {
-        userId: this.state.tweet.user.id_str,
-        name: this.state.tweet.user.screen_name,
-      },
-    });
+    console.log('handleProfilePress -> handleProfilePress');
+    // 🥑 navigate to profile screen and add `userId` and `name` keys
   };
 
   render() {
