@@ -12,7 +12,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 // export default App;
 
-// 🤸‍♀️ Exercise 2
+// Navigation: 🤸‍♀️ Exercise 2
 
 import PublicStack from './src/final/02/PublicNavigator';
 

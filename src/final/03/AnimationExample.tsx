@@ -3,8 +3,8 @@ import { Animated } from 'react-native';
 import Colors from '../../constants/Colors';
 
 export function AnimationExample() {
-  let x = useRef(new Animated.Value(0)).current;
-  let opacity = useRef(new Animated.Value(1)).current;
+  const x = useRef(new Animated.Value(0)).current;
+  const opacity = useRef(new Animated.Value(1)).current;
 
   // if you read the docs and you found multiply
   let y = Animated.multiply(x, 2);

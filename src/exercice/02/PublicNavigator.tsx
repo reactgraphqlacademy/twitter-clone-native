@@ -1,7 +1,7 @@
 import React from 'react';
 import { LoginScreen, TermsScreen } from '../01';
 
-export const LOGIN_SCREEN = 'Login';
-export const TERMS_SCREEN = 'Terms';
+// 🥑  Use `LOGIN_SCREEN` and `TERMS_SCREEN`
+// import { AppRoute } from './AppRoutes';
 
 // 🥑  Create a PublicStack

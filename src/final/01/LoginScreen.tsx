@@ -4,18 +4,18 @@ import Constants from 'expo-constants';
 import { Button } from 'react-native-paper';
 import { Screen, Headline, FormInput } from '../../components';
 import Colors from '../../constants/Colors';
-import { TERMS_SCREEN } from '../../exercice/02/PublicNavigator';
+import { AppRoute } from '../02/AppRoutes';
 
 export default function LoginScreen({ navigation: { navigate } }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   function handleLogin() {
-    navigate(TERMS_SCREEN);
+    navigate(AppRoute.TIMELINE_SCREEN);
   }
 
   function handleTerms() {
-    navigate(TERMS_SCREEN);
+    navigate(AppRoute.TERMS_SCREEN);
   }
 
   return (

@@ -6,7 +6,7 @@ import { Screen, TweetItem, ViewLoading } from '../../components';
 import { FlatList, ScrollView } from 'react-native-gesture-handler';
 
 import { TweetItemProps, TimelineScreenProps } from './types';
-import { TWEET_DETAIL_SCREEN } from '../02/PublicNavigator';
+import { AppRoute } from '../02/AppRoutes';
 
 export default function TimelineScreen(props: TimelineScreenProps) {
   const [timeline, setTimeline] = useState([]);
@@ -23,7 +23,7 @@ export default function TimelineScreen(props: TimelineScreenProps) {
 
   function handleTweetPress(id: string) {
     console.log('handlePress => ', id);
-    props.navigation.navigate(TWEET_DETAIL_SCREEN, { id });
+    props.navigation.navigate(AppRoute.TWEET_DETAIL_SCREEN, { id });
   }
 
   function Item({ item }: { item: TweetItemProps }) {
