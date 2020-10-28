@@ -161,6 +161,7 @@ export class ProfileScreen extends React.Component {
               {timeline.length == 0 ? (
                 <ViewLoading />
               ) : (
+                // 🥑  Render the datas
                 // <FlatList
                 //   data={this.state.timeline}
                 //   renderItem={this.renderItem}
