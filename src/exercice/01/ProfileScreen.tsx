@@ -5,13 +5,11 @@ import {
   StyleSheet,
   TouchableOpacity,
   Animated,
-  StatusBar,
   FlatList,
   Dimensions,
 } from 'react-native';
 import { Screen, ViewLoading, Avatar, TweetItem } from '../../components';
-import { Header as TopBar, Button } from 'react-native-elements';
-import { Feather } from '@expo/vector-icons';
+import { Appbar } from 'react-native-paper';
 import * as api from '../../api';
 import { Icons, PROFILE_AVATAR_SIZE } from '../../constants/Utils';
 import Colors from '../../constants/Colors';
@@ -66,6 +64,7 @@ const FollowButton = ({ following = false }) => (
 );
 
 export class ProfileScreen extends React.Component {
+  // 🥑  we define interpolate the opacity
   scrollY = new Animated.Value(0);
 
   static navigationOptions = {
@@ -118,13 +117,14 @@ export class ProfileScreen extends React.Component {
   );
 
   render() {
-    // const showBack = this.props.navigation.getParam('noBack');
     const { scrollY } = this;
 
-    let opacity = scrollY.interpolate({
-      inputRange: [0, 64, 100],
-      outputRange: [0, 0, 1],
-    });
+    // 🥑 interpolate the opacity
+    // let opacity = scrollY.interpolate({
+    //   inputRange: [0, 64, 100],
+    //   outputRange: [0, 0, 1],
+    // });
+
     const { user, timeline, loading } = this.state;
     return (
       <View>
@@ -133,19 +133,7 @@ export class ProfileScreen extends React.Component {
         ) : (
           <Animated.ScrollView
             scrollEventThrottle={1}
-            // contentContainerStyle={{paddingTop: -64}}
-            onScroll={Animated.event(
-              [
-                {
-                  nativeEvent: {
-                    contentOffset: {
-                      y: this.scrollY,
-                    },
-                  },
-                },
-              ],
-              { useNativeDriver: true }
-            )}
+            // 🥑 Add Animated.event
           >
             <View style={[styles.header]}>
               <Animated.Image
@@ -187,36 +175,22 @@ export class ProfileScreen extends React.Component {
         )}
         <Animated.View
           style={{
-            opacity,
+            // opacity,
             position: 'absolute',
             top: 0,
             width,
           }}
         >
-          {/* <TopBar
-            outerContainerStyles={{
-              paddingTop: Layout.notchHeight,
-              borderBottomColor: 'transparent',
-              paddingBottom: 8,
-              height: Layout.headerHeight,
-            }}
-            leftComponent={
-              !showBack ? (
-                <Feather
-                  onPress={() => this.props.navigation.goBack()}
-                  name={Icons.back}
-                  size={24}
-                  color={Colors.light}
-                />
-              ) : null
-            }
-            centerComponent={{
-              text: this.props.navigation.getParam('name', 'User Profile'),
-              style: { color: Colors.light, fontWeight: '600', fontSize: 18 },
-            }}
-            backgroundColor={Colors.brand.primary}
-          /> */}
-          <StatusBar barStyle="light-content" />
+          <Appbar.Header style={styles.appBarHeader}>
+            <Appbar.BackAction onPress={() => this.props.navigation.goBack()} />
+            {user && (
+              <Appbar.Content
+                title={user.name}
+                titleStyle={{ fontWeight: '600', fontSize: 18 }}
+                subtitle={`${timeline.length} Tweets`}
+              />
+            )}
+          </Appbar.Header>
         </Animated.View>
       </View>
     );

@@ -2,7 +2,7 @@ import React from 'react';
 import { View } from 'react-native';
 import Colors from '../../constants/Colors';
 
-export function AnimationExample() {
+export function Animation() {
   return (
     <View
       style={{

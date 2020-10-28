@@ -3,14 +3,10 @@ import { NavigationContainer } from '@react-navigation/native';
 
 // 🥑  Modify the export according to the exercices
 
-// 🤸‍♀️ Exercise 1
+// Foundation: 🤸‍♀️ Exercise 1
 
 // import { LoginScreen as App } from './src/exercice/01';
 // import { TermsScreen as App } from './src/exercice/01';
-
-// import { AnimationExample as App } from './src/final/03/AnimationExample';
-
-// export default App;
 
 // Navigation: 🤸‍♀️ Exercise 2
 
@@ -23,3 +19,9 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
+// Animation: 🤸‍♀️ Exercise 1
+
+// import { Animation as App } from './src/final/03/Animation';
+
+// export default App;
