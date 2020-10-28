@@ -44,7 +44,7 @@ This should start up your browser on [`http://localhost:19002/`](http://localhos
 
 ## References
 
-All the links are available [on the React Native Mindmap](https://my.mindnode.com/h85zxxubxjuSewNvxwdhA3Ef32CpFeM7J8b4ML3z#-609.7,-24.7,2).
+All the links are available [on the React Native Mindmap](https://davidl.fr/mindmaps).
 
 ## Workshop Feedback
 
