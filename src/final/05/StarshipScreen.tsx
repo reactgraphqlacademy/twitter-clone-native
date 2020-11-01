@@ -1,28 +1,37 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { Headline } from 'react-native-paper';
+import { ScrollView } from 'react-native-gesture-handler';
 
-import { NetworkProvider } from 'react-native-offline';
-import Offline from './Offline';
+import { useQuery } from 'react-query';
+import fetchAsync from '../../fetch';
+import AppShell from './AppShell';
+import StarShipCard from '../../components/StarShipCard';
 
-interface Props {}
+const StarshipScreen = () => {
+  const { status, error, data } = useQuery('starships', () =>
+    fetchAsync(`https://swapi.dev/api/starships/`)
+  );
 
-const StarshipScreen = (props: Props) => {
+  if (status === 'loading') return <AppShell title="Loading..." />;
+  if (status === 'error') return <AppShell title="Error 😕" />;
+
   return (
-    <NetworkProvider>
-      <View style={styles.container}>
-        <Headline>Starships</Headline>
-        <Offline />
-      </View>
-    </NetworkProvider>
+    <AppShell title="Starships">
+      <ScrollView>
+        {data.results.map((ship) => {
+          console.log('StarshipScreen -> ship', ship);
+          return (
+            <StarShipCard
+              key={ship.name}
+              title={ship.name}
+              subtitle={ship.model}
+              manufacturer={ship.manufacturer}
+              price={ship.cost_in_credits}
+            />
+          );
+        })}
+      </ScrollView>
+    </AppShell>
   );
 };
 
 export default StarshipScreen;
-
-const styles = StyleSheet.create({
-  container: {
-    padding: 24,
-    marginTop: 36,
-  },
-});

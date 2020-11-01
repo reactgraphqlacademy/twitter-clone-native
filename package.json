@@ -28,10 +28,12 @@
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.3.tar.gz",
     "react-native-gesture-handler": "~1.7.0",
+    "react-native-offline": "^5.7.0",
     "react-native-paper": "^4.2.0",
     "react-native-safe-area-context": "3.1.4",
     "react-native-screens": "~2.10.1",
     "react-native-web": "~0.13.12",
+    "react-query": "^2.25.2",
     "yarn": "^1.22.10"
   },
   "devDependencies": {

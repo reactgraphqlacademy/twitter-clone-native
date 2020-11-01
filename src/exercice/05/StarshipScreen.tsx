@@ -1,9 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 
-interface Props {}
+const StarshipScreen = () => {
+  // Query data with fetchAsync
 
-const StarshipScreen = (props: Props) => {
   return (
     <View>
       <Text></Text>
@@ -12,5 +12,3 @@ const StarshipScreen = (props: Props) => {
 };
 
 export default StarshipScreen;
-
-const styles = StyleSheet.create({});

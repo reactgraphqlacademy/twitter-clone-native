@@ -22,3 +22,8 @@ export default App;
 // Animation: 🤸‍♀️ Exercise 1
 // import { Animation as App } from './src/exercice/03/Animation';
 // export default App;
+
+// Data Management: 🤸‍♀️ Exercise 1
+//
+// import { StarshipScreen as App } from './src/exercice/05';
+// export default App;
