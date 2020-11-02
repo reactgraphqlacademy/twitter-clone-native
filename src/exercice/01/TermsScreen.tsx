@@ -4,16 +4,18 @@ import { Screen } from '../../components';
 import { Appbar } from 'react-native-paper';
 import { theme } from '../../constants/Colors';
 
+// 🥑 We need to use this props screen `{navigation}`
 export default function TermsScreen() {
-  const goBack = () => alert('Went back');
-  const handleMore = () => alert('Shown more');
+  function goBack() {
+    // 🥑 We need to use this props screen `{navigation}`
+    alert('goBack pressed!');
+  }
 
   return (
     <Screen>
       <Appbar.Header theme={theme}>
         <Appbar.BackAction onPress={goBack} />
         <Appbar.Content title="Terms and Conditions" />
-        <Appbar.Action icon="dots-vertical" onPress={handleMore} />
       </Appbar.Header>
       <View style={{ padding: 32 }}>
         <Text>

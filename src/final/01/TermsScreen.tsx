@@ -6,15 +6,15 @@ import { Screen } from '../../components';
 import { theme } from '../../constants/Colors';
 
 export default function TermsScreen({ navigation }) {
-  const goBack = () => navigation.goBack();
-  const handleMore = () => alert('Shown more');
+  function goBack() {
+    navigation.goBack();
+  }
 
   return (
     <Screen>
       <Appbar.Header theme={theme}>
         <Appbar.BackAction onPress={goBack} />
         <Appbar.Content title="Terms and Conditions" />
-        <Appbar.Action icon="dots-vertical" onPress={handleMore} />
       </Appbar.Header>
       <ScrollView style={{ padding: 32 }}>
         <Text>
