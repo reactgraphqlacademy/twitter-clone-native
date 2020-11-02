@@ -17,7 +17,7 @@ yarn add global expo-cli
 ```
 
 ```console
-git clone <repo>
+git clone https://github.com/reactgraphqlacademy/twitter-clone-native.git
 cd twitter-clone-native
 yarn
 ```

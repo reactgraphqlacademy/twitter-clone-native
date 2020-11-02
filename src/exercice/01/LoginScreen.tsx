@@ -6,7 +6,7 @@ export default function LoginScreen() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Text>Add a beatufill Login Screen here</Text>
+      <Text>Add a beautifull Login Screen here</Text>
     </View>
   );
 }
