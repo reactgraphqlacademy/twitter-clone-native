@@ -6,16 +6,16 @@ import { Screen, Headline, FormInput } from '../../components';
 import Colors from '../../constants/Colors';
 import { AppRoute } from '../02/AppRoutes';
 
-export default function LoginScreen({ navigation: { navigate } }) {
+export default function LoginScreen({ navigation }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   function handleLogin() {
-    navigate(AppRoute.TIMELINE_SCREEN);
+    navigation.navigate(AppRoute.TIMELINE_SCREEN);
   }
 
   function handleTerms() {
-    navigate(AppRoute.TERMS_SCREEN);
+    navigation.navigate(AppRoute.TERMS_SCREEN);
   }
 
   return (
