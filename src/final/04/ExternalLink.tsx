@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 
 interface ExternalLinkProps {
-  style: StyleProp<TextStyle>;
+  style?: StyleProp<TextStyle>;
   url: string;
   title: string;
 }

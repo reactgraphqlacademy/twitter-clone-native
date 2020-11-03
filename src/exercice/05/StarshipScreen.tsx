@@ -1,13 +1,14 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import AppShell from './AppShell';
 
 const StarshipScreen = () => {
   // Query data with fetchAsync
 
   return (
-    <View>
+    <AppShell title="Starships">
       <Text></Text>
-    </View>
+    </AppShell>
   );
 };
 

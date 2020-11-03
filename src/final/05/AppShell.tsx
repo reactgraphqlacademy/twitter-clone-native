@@ -1,7 +1,8 @@
 import React, { ReactElement } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { Colors, Headline } from 'react-native-paper';
 import { NetworkProvider } from 'react-native-offline';
+import Offline from './Offline';
 
 interface Props {
   title: string;
@@ -11,6 +12,7 @@ interface Props {
 const AppShell = (props: Props) => {
   return (
     <NetworkProvider>
+      <Offline />
       <View style={styles.container}>
         <Headline style={styles.headline}>{props.title}</Headline>
         {props.children}
