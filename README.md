@@ -2,7 +2,7 @@
 
 > Learn React Native with [reactgraphql.academy](https://reactgraphql.academy/react/training/workshops/react-native/) in a fun way by building a Twitter clone.
 
-![Views Screenshots](./exercice/screenshots.jpg)
+![Views Screenshots](./images/screenshots.jpg)
 
 ## Prerequisites
 
@@ -37,12 +37,12 @@ This should start up your browser on [`http://localhost:19002/`](http://localhos
 
 ## Exercices
 
-- [React Native Foundations](./exercice/01.md)
-- [React Native Navigation](./exercice/02.md)
-- [React Native Animations](./exercice/03.md)
-- [React Native Ecosystem](./exercice/04.md)
-- [React Native Data Management](./exercice/05.md)
-- [React Native Releases and Quality Assurance](./exercice/06.md)
+- [React Native Foundations](./src/exercice/01/README.md)
+- [React Native Navigation](./src/exercice/02/README.md)
+- [React Native Animations](./src/exercice/03/README.md)
+- [React Native Ecosystem](./src/exercice/04/README.md)
+- [React Native Data Management](./src/exercice/05/README.md)
+- [React Native Releases and Quality Assurance](./src/exercice/06/README.md)
 
 ## References
 
