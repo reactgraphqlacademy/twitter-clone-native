@@ -13,7 +13,7 @@
 ## Setup
 
 ```console
-yarn add global expo-cli
+yarn global add expo-cli
 ```
 
 ```console
@@ -51,6 +51,6 @@ All the links are available [on the React Native Mindmap](https://davidl.fr/mind
 ## Workshop Feedback
 
 A quick feedback is alway apreciated to improve the materials.
-At the end of the workshop, please go to this URL to give feedback.
+At the end of the workshop, please [go to this URL to give feedback](https://davidl.fr/feedback-workshop).
 
 Thank you!

@@ -3,7 +3,7 @@
 ## Learning objectives
 
 - Use a real device to feel the "React Native way of working"™️
-- Discover the React Native api
+- Discover [React Native Core Components and APIs](https://reactnative.dev/docs/components-and-apis)
 - Using a third part component library
 
 ## 🥑 Before we start the exercise
