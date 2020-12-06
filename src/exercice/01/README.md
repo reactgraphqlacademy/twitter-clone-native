@@ -22,10 +22,6 @@ We are going to start by creating the Login screen. You can [download a bigger i
 - [ ] Use the `TextInput` component
 - [ ] Use the `Button` component
 
-### 🏋️‍♀️ Bonus
-
-- [ ] Create your custom `TextInput` and `Button` component
-
 ## 🤸‍♀️ Exercise 2
 
 - [ ] Paste your LoginScreen from the exercice 1 Snack into `src/exercice/01/LoginScreen.tsx`
@@ -43,3 +39,13 @@ Next it's going to use a more performant scroll for long lists.
 You can use the following icons [https://docs.expo.io/guides/icons/](https://docs.expo.io/guides/icons/)
 
 - [ ] Add likes and retweets to each tweet in the `FlatList`.
+- [ ] Create your custom `TextInput` and `Button` component
+
+## 🏅 Elaboration and Feedback
+
+<div>
+<span>After the exercice, if you want to remember what you've just learned, then </span>
+<a rel="noopener noreferrer" target="_blank" href="https://airtable.com/shrBuZqOJL5UeLLF1?prefill_Name=React+Native+Founddations&prefill_Exercice=1">
+  fill out the elaboration and feedback form.
+</a>
+</div>

@@ -75,3 +75,12 @@ Create a `BottomTabNavigator` and use it as `PrivateNavigator` for your app. Thi
 
 - [ ] Add a custom icon for an active plain icon and outline icons for the rest
       Hint: [https://reactnavigation.org/docs/en/tab-based-navigation.html#customizing-the-appearance](https://reactnavigation.org/docs/en/tab-based-navigation.html#customizing-the-appearance)
+
+## 🏅 Elaboration and Feedback
+
+<div>
+<span>After the exercice, if you want to remember what you've just learned, then </span>
+<a rel="noopener noreferrer" target="_blank" href="https://airtable.com/shrBuZqOJL5UeLLF1?prefill_Name=React+Native+Navigation&prefill_Exercice=2">
+  fill out the elaboration and feedback form.
+</a>
+</div>

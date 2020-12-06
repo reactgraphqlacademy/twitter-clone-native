@@ -40,7 +40,7 @@ Refactor `ExternalLink` a function component with TypeScript
 
 ### 🏋️‍♀️ Bonus
 
-- [ ] Choose another one and repeat the process. The [Typescript cheatsheet](https://github.com/typescript-cheatsheets/react) may help.
+- [ ] Choose another component and repeat the process. The [Typescript cheatsheet](https://github.com/typescript-cheatsheets/react) may help.
 
 ## 🤸‍♀️ Exercise 3
 
@@ -121,3 +121,12 @@ import './Card.stories.tsx';
 ### 🏋️‍♀️ Bonus
 
 - [ ] Create declaration files for your component. You have an example with `src/final/01/types.d.ts`
+
+## 🏅 Elaboration and Feedback
+
+<div>
+<span>After the exercice, if you want to remember what you've just learned, then </span>
+<a rel="noopener noreferrer" target="_blank" href="https://airtable.com/shrBuZqOJL5UeLLF1?prefill_Name=React+Native+Ecosystem&prefill_Exercice=4">
+  fill out the elaboration and feedback form.
+</a>
+</div>

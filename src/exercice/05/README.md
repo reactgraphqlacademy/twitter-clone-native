@@ -31,3 +31,12 @@
 ## Bonus
 
 - [ ] Add a modal to display all the datas about the spaceship https://callstack.github.io/react-native-paper/modal.html
+
+## 🏅 Elaboration and Feedback
+
+<div>
+<span>After one exercice, if you want to remember what you've just learned, then </span>
+<a rel="noopener noreferrer" target="_blank" href="https://airtable.com/shrBuZqOJL5UeLLF1?prefill_Name=React+Native+Data+Management&prefill_Exercice=5">
+  fill out the elaboration and feedback form.
+</a>
+</div>

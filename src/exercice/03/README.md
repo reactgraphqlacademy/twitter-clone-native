@@ -58,3 +58,12 @@ Go to `src/exercice/01/ProfileScreen.tsx` and do the following tasks:
 - [ ] Install [Lottie](https://docs.expo.io/versions/latest/sdk/lottie/) with `expo install`
 - [ ] import the confetti animation file `src/exercice/03/confetti.json` or use one from [https://lottiefiles.com/featured](https://lottiefiles.com/featured)
 - [ ] Add a `<LottieView>`
+
+## 🏅 Elaboration and Feedback
+
+<div>
+<span>After the exercice, if you want to remember what you've just learned, then </span>
+<a rel="noopener noreferrer" target="_blank" href="https://airtable.com/shrBuZqOJL5UeLLF1?prefill_Name=React+Native+Animations&prefill_Exercice=3">
+  fill out the elaboration and feedback form.
+</a>
+</div>
