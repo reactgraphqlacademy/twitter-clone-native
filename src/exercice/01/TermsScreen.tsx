@@ -13,7 +13,7 @@ export default function TermsScreen() {
 
   return (
     <Screen>
-      <Appbar.Header theme={theme}>
+      <Appbar.Header>
         <Appbar.BackAction onPress={goBack} />
         <Appbar.Content title="Terms and Conditions" />
       </Appbar.Header>

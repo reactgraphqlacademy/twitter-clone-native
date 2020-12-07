@@ -17,11 +17,11 @@
 
 - [ ] Use `LOGIN_SCREEN` and `TERMS_SCREEN` from `AppRoute`as route names to maintain consistency when navigating
 
-- [ ] Update the entry point of your application. Wrap your `PublicStack` with `NavigationContainer` using the Stack Navigator from `src/final/02/PublicNavigator.tsx`
+- [ ] Update the entry point of your application. Wrap your `PublicStack` with `NavigationContainer` using the Stack Navigator from `src/exercice/02/PublicNavigator.tsx`
 
 **Hint:** If you are lost you can debug the changes on the `NavigationContainer` with `onStateChange={state => console.log('New state is', state)}`
 
-- [ ] Add some options to the `Navigator`
+- [ ] We have an issue with the double header, we can fix it with some options to the `Navigator`
 
 ```javascript
 headerMode={'none'}
@@ -29,11 +29,21 @@ mode={'modal'}
 initialRouteName={AppRoute.LOGIN_SCREEN}
 ```
 
+- [ ] Wrap the terms link with a `TouchableOpacity onPress={handleTerms}`
+
+Here is a function to navigate between screens
+
+```
+function handleTerms() {
+  navigation.navigate(AppRoute.TERMS_SCREEN);
+}
+```
+
 - [ ] Add a `goBack` behavior on `TermsScreen.tsx`
 
 ## 🤸‍♀️ Exercise 2 Styling
 
-- [ ] We have an issue of the color on the Terms Screen. How can we fix the color od the header?
+- [ ] We have an issue of the color on the Terms Screen. How can we fix the color on the header to make it blue?
 
 ## 🤸‍♀️ Exercise 3 Passing data throught screens
 
