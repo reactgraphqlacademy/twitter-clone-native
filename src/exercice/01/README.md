@@ -32,7 +32,10 @@ Nice! We've got our first view with a scroll.
 Next it's going to use a more performant scroll for long lists.
 
 - [ ] Got to `App.tsx` and change the screen from `TermsScreen` to `TimelineScreen`.
-- [ ] Go to `src/exercice/01/TimelineScreen.tsx` and implement a `FlatList` for the data that is fetched.
+- [ ] Go to `src/exercice/01/TimelineScreen.tsx`, you should have a "stringifyied" version of timeline data
+- [ ] Implement a `FlatList` for the data that is fetched.
+  - [ ] Add some dummy data with `data={timeline}`
+  - [ ] Render `TweetItem` with `renderItem={this.renderItem}`
 
 ### 🏋️‍♀️ Bonus
 

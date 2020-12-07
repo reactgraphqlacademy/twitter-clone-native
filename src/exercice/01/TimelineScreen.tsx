@@ -1,7 +1,7 @@
 import React from 'react';
 
 import * as api from '../../api/';
-import { StyleSheet, Text } from 'react-native';
+import { FlatList, StyleSheet, Text, View } from 'react-native';
 import { Screen, TweetItem, ViewLoading } from '../../components';
 import { ScrollView } from 'react-native-gesture-handler';
 
@@ -27,6 +27,15 @@ export default class TimelineScreen extends React.Component {
   // 🥑  create a TweetItem component with this API:
   // <TweetItem item={item} handlePress={() => this.handleTweetPress(item.id_str)} />
 
+  renderItem = ({ item }) => {
+    return (
+      <View>
+        {/* 🥑  create a TweetItem component with this API:
+         <TweetItem item={item} handlePress={() => this.handleTweetPress(item.id_str)} /> */}
+      </View>
+    );
+  };
+
   render() {
     const { timeline } = this.state;
     return (
@@ -35,7 +44,14 @@ export default class TimelineScreen extends React.Component {
           <ViewLoading />
         ) : (
           <ScrollView>
+            {/* 🥑  Remplace the timeline.json with a FlatList */}
             <Text>{JSON.stringify(timeline, null, 4)}</Text>
+
+            {/* <FlatList
+              data={}
+              renderItem={}
+              keyExtractor={(item) => item.id}
+            /> */}
           </ScrollView>
         )}
       </Screen>
