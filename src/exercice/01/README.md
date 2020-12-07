@@ -4,7 +4,7 @@
 
 - Use a real device to feel the "React Native way of working"™️
 - Discover [React Native Core Components and APIs](https://reactnative.dev/docs/components-and-apis)
-- Using a third part component library
+- Using a [UI library `react-native-paper`](https://callstack.github.io/react-native-paper/button.html)
 
 ## 🥑 Before we start the exercise
 
@@ -12,17 +12,17 @@
 - Download the expo application on your phone
 - `react-native-paper` is already included by default in Snack.
 
-## 🤸‍♀️ Exercise 1
+## 🤸‍♀️ Exercise 1 - [Use snack to code from a webbrowser](https://snack.expo.io)
 
 We are going to start by creating the Login screen. You can [download a bigger image here](./login.PNG).
 
 ![Login Screen](./login-sm.PNG)
 
 - [ ] Go to [Expo Snack](https://snack.expo.io) and create the Screen from Scratch
-- [ ] Use the `TextInput` component
-- [ ] Use the `Button` component
+- [ ] Use the `TextInput` component [from `react-native-paper`](https://callstack.github.io/react-native-paper/text-input.html)
+- [ ] Use the `Button` component [from `react-native-paper`](https://callstack.github.io/react-native-paper/button.html)
 
-## 🤸‍♀️ Exercise 2
+## 🤸‍♀️ Exercise 2 - Use VSCode to code from your computer
 
 - [ ] Paste your LoginScreen from the exercice 1 Snack into `src/exercice/01/LoginScreen.tsx`
 - [ ] Got to `App.tsx` and change the screen from `LoginScreen` to `TermsScreen`.
