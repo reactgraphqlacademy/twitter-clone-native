@@ -66,7 +66,7 @@ yarn add -D @types/storybook__react
 
 ```javascript
 // App.tsx
-
+import { LoginScreen as App } from './src/exercice/01';
 import StorybookUIRoot from './storybook';
 
 // Should we show storybook instead of our app?
@@ -78,6 +78,7 @@ const UI = SHOW_STORYBOOK && __DEV__ ? StorybookUIRoot : App;
 export default UI;
 ```
 
+- [ ] Check if everything is working
 - [ ] Create a new file `/storybook/stories/Card.stories.tsx`
 
 ```javascript

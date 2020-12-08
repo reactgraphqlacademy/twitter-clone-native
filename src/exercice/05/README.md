@@ -7,15 +7,18 @@
 
 ## 🥑 Before we start the exercise
 
-- Have a look at the [`react-query` api reference](https://react-query.tanstack.com/docs/api)
+- [ ] Have a look at [the SWAPI documentation](https://swapi.dev/documentation#starships)
+- [ ] We are going to isntall AND use 2 third part-libraries `react-native-offline` and `react-query`
 
 ## 🤸‍♀️ Exercise 1 Add offline feedback
 
 ![Offline Example](./offline-example.gif)
 
-- [ ] Update `App.tsx`
+🥑 [`react-native-offline` documentation](https://github.com/rgommezz/react-native-offline)
+
+- [ ] Install the library with `yarn add react-native-offline`
+- [ ] Update `App.tsx` and import `StarshipScreen`
 - [ ] Go to `src/exercice/05/AppShell.tsx`
-- [ ] install the library with `yarn add react-native-offline`
 - [ ] Add `import { NetworkProvider } from 'react-native-offline';`
 - [ ] Add a message when the user is not connected
 
@@ -23,8 +26,10 @@
 
 ![Starships list](./starships.png)
 
-- [ ] add `react-query`
-- [ ] Have a look at [the SWAPI documentation](https://swapi.dev/documentation#starships)
+🥑 [`react-query` documentation](https://react-query.tanstack.com/docs/api)
+🥑 [Star Wars API documentation](https://swapi.dev/documentation#starships)
+
+- [ ] Install the library with `yarn add react-query`
 - [ ] Use `fetchAsync('https://swapi.dev/api/starships/')` to query datas (import it from `/src/fetch.ts`)
 - [ ] Use the `StarShipCard` to display the datas
 
