@@ -7,7 +7,7 @@
 
 ## 🥑 Before we start the exercise
 
-- [ ] Have a look at [the SWAPI documentation](https://swapi.dev/documentation#starships)
+- [ ] You should have a look at [the SWAPI documentation](https://swapi.dev/documentation#starships)
 - [ ] We are going to isntall AND use 2 third part-libraries `react-native-offline` and `react-query`
 
 ## 🤸‍♀️ Exercise 1 Add offline feedback
@@ -18,9 +18,9 @@
 
 - [ ] Install the library with `yarn add react-native-offline`
 - [ ] Update `App.tsx` and import `StarshipScreen`
-- [ ] Go to `src/exercice/05/AppShell.tsx`
-- [ ] Add `import { NetworkProvider } from 'react-native-offline';`
-- [ ] Add a message when the user is not connected
+- [ ] Go to `src/exercice/05/AppShell.tsx` and add `import { NetworkProvider } from 'react-native-offline';`
+- [ ] Import a component `<Offline />`
+- [ ] Go to `src/exercice/05/Offline.tsx` Add a message when the user is not connected
 
 ## 🤸‍♀️ Exercise 2 Fetch data
 
