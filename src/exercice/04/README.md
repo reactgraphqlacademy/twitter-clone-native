@@ -19,7 +19,7 @@
 ext install dsznajder.es7-react-js-snippets dbaeumer.vscode-eslint nathanchapman.javascriptsnippets esbenp.prettier-vscode chakrounanas.turbo-console-log
 ```
 
-- [ ] Go to **Code** > **Preferences** > **Settings**
+- [ ] Go to **Code** (or **File**) > **Preferences** > **Settings**
       Search Format
       ✅ Editor: Format on save
 
