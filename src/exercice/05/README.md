@@ -26,11 +26,11 @@
 
 ![Starships list](./starships.png)
 
-🥑 [`react-query` documentation](https://react-query.tanstack.com/docs/api)
+🥑 [`react-query` documentation](https://react-query.tanstack.com/docs/guides/queries)
 🥑 [Star Wars API documentation](https://swapi.dev/documentation#starships)
 
 - [ ] Install the library with `yarn add react-query`
-- [ ] Use `fetchAsync('https://swapi.dev/api/starships/')` to query datas (import it from `/src/fetch.ts`)
+- [ ] Use `useQuery` hooks with `fetchAsync('https://swapi.dev/api/starships/')` to query datas (import it from `/src/fetch.ts`), don't forget to check `react-query` documentation
 - [ ] Use the `StarShipCard` to display the datas
 
 ## Bonus
