@@ -12,9 +12,9 @@
   "dependencies": {
     "@expo/vector-icons": "^12.0.0",
     "@react-native-community/masked-view": "0.1.10",
-    "@react-navigation/bottom-tabs": "^5.8.0",
-    "@react-navigation/native": "^5.7.3",
-    "@react-navigation/stack": "^5.9.3",
+    "@react-navigation/bottom-tabs": "^5.11.7",
+    "@react-navigation/native": "^5.9.2",
+    "@react-navigation/stack": "^5.14.2",
     "expo": "^40.0.0",
     "expo-asset": "~8.2.1",
     "expo-constants": "~9.3.3",
@@ -27,9 +27,8 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
     "react-native-gesture-handler": "~1.8.0",
     "react-native-offline": "^5.7.0",
-    "react-native-paper": "^4.2.0",
+    "react-native-paper": "^4.7.1",
     "react-native-safe-area-context": "3.1.9",
-    "react-native-screens": "~2.15.2",
     "react-native-web": "~0.13.12",
     "react-query": "^2.25.2",
     "yarn": "^1.22.10"
@@ -37,7 +36,7 @@
   "devDependencies": {
     "@babel/core": "~7.9.0",
     "@types/react": "~16.9.35",
-    "@types/react-native": "~0.63.2",
+    "@types/react-native": "~0.63.50",
     "eslint-config-react-native-wcandillon": "^3.4.0",
     "typescript": "~4.0.0"
   }
