@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
     padding: 24,
     marginTop: 36,
     backgroundColor: Colors.grey100,
+    flex: 1,
   },
   headline: {
     marginBottom: 24,
