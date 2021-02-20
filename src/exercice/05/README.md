@@ -26,10 +26,12 @@
 
 ![Starships list](./starships.png)
 
+🥑 [`QueryClientProvider` documentation](https://react-query.tanstack.com/reference/QueryClientProvider#_top)
 🥑 [`react-query` documentation](https://react-query.tanstack.com/docs/guides/queries)
 🥑 [Star Wars API documentation](https://swapi.dev/documentation#starships)
 
 - [ ] Install the library with `yarn add react-query`
+- [ ] Add a `QueryClientProvider` and wrap the application. This time you need to wrap everything from `App.tsx`
 - [ ] Use `useQuery` hooks with `fetchAsync('https://swapi.dev/api/starships/')` to query datas (import it from `/src/fetch.ts`), don't forget to check `react-query` documentation
 - [ ] Use the `StarShipCard` to display the datas
 

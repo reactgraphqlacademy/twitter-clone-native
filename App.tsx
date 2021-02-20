@@ -24,6 +24,7 @@ export default App;
 // export default App;
 
 // Data Management: 🤸‍♀️ Exercise 1
-//
 // import { StarshipScreen as App } from './src/exercice/05';
+// Data Management: 🤸‍♀️ Exercise 2 `QueryClientProvider` should be here
+
 // export default App;
