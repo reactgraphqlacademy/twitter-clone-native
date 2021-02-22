@@ -6,10 +6,10 @@
 
 ## 🥑 Before we start the exercise
 
-- There are others routing solutions available, keep in mind we are using the `react-navigation` library
+- There are others routing solutions available, keep in mind we are using the `react-navigation` liııbrary
 - We are using `react-navigation v5.x.x` (Be carreful when you random copy/paste Stack Overflow)
 
-## 🤸‍♀️ Exercise 1
+## 🤸‍♀️ Exercise 2.1
 
 - [ ] Create a Stack Navigator in `src/exercice/02/PublicNavigator.tsx` that shows the `LoginScreen` and the `TermsScreen`
 
@@ -41,11 +41,11 @@ function handleTerms() {
 
 - [ ] Add a `goBack` behavior on `TermsScreen.tsx`
 
-## 🤸‍♀️ Exercise 2 Styling
+## 🤸‍♀️ Exercise 2.2 Styling
 
 - [ ] We have an issue of the color on the Terms Screen. How can we fix the color on the header to make it blue?
 
-## 🤸‍♀️ Exercise 3 Passing data throught screens
+## 🤸‍♀️ Exercise 2.3 Passing data throught screens
 
 Go to `src/exercice/01/TimelineScreen.tsx`:
 
@@ -66,7 +66,7 @@ Go to `src/Screens/TweetDetailScreen.tsx`
   }
 ```
 
-## 🤸‍♀️ Exercise 4 Authentication
+## 🤸‍♀️ Exercise 2.4 Authentication
 
 - [ ] Add an Authentication flow to your application
 

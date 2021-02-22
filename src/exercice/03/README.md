@@ -10,7 +10,7 @@
 - You can have a look at the [React Natvice Animated API](https://reactnative.dev/docs/animated)
 - At some point you will need to use the `useNativeDriver` option
 
-## 🤸‍♀️ Exercise 1
+## 🤸‍♀️ Exercise 3.1
 
 Go to `src/exercice/03/AnimationExample.tsx` and do the following tasks:
 
@@ -18,14 +18,14 @@ Go to `src/exercice/03/AnimationExample.tsx` and do the following tasks:
 - [ ] Animate the `opacity` of the View so it goes from 1 to 0.
       **Hint:** you need to interpolate the animated value.
 
-## 🤸‍♀️ Exercise 2
+## 🤸‍♀️ Exercise 3.2
 
 - [ ] Animate the View with a `useEffect`
 - [ ] It moves on the Y axis twice what it does on the X axis.
 - [ ] The opacity of the View should go from 0 to 1
 - [ ] The duration for all the animations should be 2 seconds.
 
-## 🤸‍♀️ Exercise 3
+## 🤸‍♀️ Exercise 3.3
 
 Let's create the [Twitter user profile on scroll animation](https://vimeo.com/473089632).
 
@@ -48,7 +48,7 @@ Go to `src/exercice/01/ProfileScreen.tsx` and do the following tasks:
 
 - [ ] Use [useNativeDriver:true](https://reactnative.dev/docs/animated#using-the-native-driver) in the configuration of the animation.
 
-## 🤸‍♀️ Exercise 4
+## 🤸‍♀️ Exercise 3.4
 
 - [ ] Animate the Avatar so when the user scrolls down and the Avatar gets smaller the center of the Avatar stays in the same position.
 

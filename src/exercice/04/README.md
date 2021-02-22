@@ -11,7 +11,7 @@
 - You should have VSCode installed
 - You can star this repo [https://github.com/wcandillon/eslint-config-react-native-wcandillon](https://github.com/wcandillon/eslint-config-react-native-wcandillon) for typescript/eslint/prettier configuration
 
-## 🤸‍♀️ Exercise 1
+## 🤸‍♀️ Exercise 4.1
 
 - [ ] Launch VS Code Quick Open (`cmd` + `p` or `ctrl` + `p`), paste the following command, and press enter.
 
@@ -23,15 +23,7 @@ ext install dsznajder.es7-react-js-snippets dbaeumer.vscode-eslint nathanchapman
       Search Format
       ✅ Editor: Format on save
 
-### 🏋️‍♀️ Bonus
-
-- [ ] Install theses fancy VSCode extensions and let me know what do you think
-
-```console
-ext install naumovs.color-highlight vincaslt.highlight-matching-tag 2gua.rainbow-brackets
-```
-
-## 🤸‍♀️ Exercise 2
+## 🤸‍♀️ Exercise 4.2
 
 Refactor `ExternalLink` a function component with TypeScript
 
@@ -42,7 +34,7 @@ Refactor `ExternalLink` a function component with TypeScript
 
 - [ ] Choose another component and repeat the process. The [Typescript cheatsheet](https://github.com/typescript-cheatsheets/react) may help.
 
-## 🤸‍♀️ Exercise 3
+## 🤸‍♀️ Exercise 4.3
 
 - [ ] Setup StoryBook
 
@@ -122,6 +114,12 @@ import './Card.stories.tsx';
 ### 🏋️‍♀️ Bonus
 
 - [ ] Create declaration files for your component. You have an example with `src/final/01/types.d.ts`
+
+- [ ] Install theses fancy VSCode extensions and let me know what do you think
+
+```console
+ext install naumovs.color-highlight vincaslt.highlight-matching-tag 2gua.rainbow-brackets
+```
 
 ## 🏅 Elaboration and Feedback
 
