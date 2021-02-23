@@ -3,14 +3,16 @@
 ## Learning objectives
 
 - Create an offline experience
-- Query and siplay datas from the Star Wars API
+- Fetch and diplay datas from the Star Wars API with `useQuery`
 
 ## 🥑 Before we start the exercise
 
 - [ ] You should have a look at [the SWAPI documentation](https://swapi.dev/documentation#starships)
 - [ ] We are going to isntall AND use 2 third part-libraries `react-native-offline` and `react-query`
 
-## 🤸‍♀️ Exercise 1 Add offline feedback
+## 🤸‍♀️ Exercise 5.1
+
+> Add offline feedback
 
 ![Offline Example](./offline-example.gif)
 
@@ -22,7 +24,9 @@
 - [ ] Import a component `<Offline />`
 - [ ] Go to `src/exercice/05/Offline.tsx` Add a message when the user is not connected
 
-## 🤸‍♀️ Exercise 2 Fetch data
+## 🤸‍♀️ Exercise 5.2
+
+> Fetch data over the network
 
 ![Starships list](./starships.png)
 
