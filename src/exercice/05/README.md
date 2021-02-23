@@ -30,9 +30,9 @@
 
 ![Starships list](./starships.png)
 
-🥑 [`QueryClientProvider` documentation](https://react-query.tanstack.com/reference/QueryClientProvider#_top)
-🥑 [`react-query` documentation](https://react-query.tanstack.com/docs/guides/queries)
-🥑 [Star Wars API documentation](https://swapi.dev/documentation#starships)
+- 🥑 [`QueryClientProvider` documentation](https://react-query.tanstack.com/reference/QueryClientProvider#_top)
+- 🥑 [`react-query` documentation](https://react-query.tanstack.com/docs/guides/queries)
+- 🥑 [Star Wars API documentation](https://swapi.dev/documentation#starships)
 
 - [ ] Install the library with `yarn add react-query`
 - [ ] Add a `QueryClientProvider` and wrap the application. This time you need to wrap everything from `App.tsx`
